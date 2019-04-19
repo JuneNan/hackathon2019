@@ -1,0 +1,2 @@
+class Silrok < ApplicationRecord
+end
