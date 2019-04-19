@@ -1,5 +1,5 @@
-@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
 
 @font-face { font-family: 'BMYEONSUNG'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff'); font-weight: normal; font-style: normal; }
@@ -12,6 +12,7 @@
 .mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr15{margin-right:15px;}.mr20{margin-right:20px;}.mr30{margin-right:30px;}
 .ml5{margin-left: 5px;}.ml10{margin-left: 10px;}.ml15{margin-left: 15px;}.ml20{margin-left: 20px;}.ml30{margin-left: 30px;}
 .tc {text-align: center;}
+.bpc {background-color:#5fcae2}
 .pc {color:#5fcae2}
 .pr {position: relative;}
 .sc {color: #ffd585}
@@ -25,7 +26,7 @@
 .rot90 {transform: rotate(90deg);}
 .bs{box-shadow: 1px 2px 4px rgba(0,0,0,0.2);}
 .fixed_header {position: absolute; top:20px;right:20px;}
-
+.sheet_content .mdl-cell--8-col:nth-child(odd) {background-color:#EEE}
 .main_page .tag {font-size:14px;}
 .main_page .tag.keyword {font-size:14px;}
 
