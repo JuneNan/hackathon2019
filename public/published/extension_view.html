@@ -47,12 +47,10 @@
     </body>
     <script>
         $(document).ready(function(){
-            console.log("아이링크",$(window).attr("i_link"));
-            console.log("아이제목",$(window).attr("i_title"));
-            console.log(window.i_title, window.i_link);
-            console.log($(window).attr('i_title'));
             console.log($("#articleTitle", window.parent.document).val());
             console.log($("#articleTitle", window.parent.document).html());
+            var a = parent.document.getElementById("articleTitle")
+            console.log($(a).html())
         })
     </script>
 </html>
