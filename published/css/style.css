@@ -26,7 +26,7 @@
 .rot90 {transform: rotate(90deg);}
 .bs{box-shadow: 1px 2px 4px rgba(0,0,0,0.2);}
 .fixed_header {position: absolute; top:20px;right:20px;}
-
+.sheet_content .mdl-cell--8-col:nth-child(odd) {background-color:#EEE}
 .main_page .tag {font-size:14px;}
 .main_page .tag.keyword {font-size:14px;}
 
