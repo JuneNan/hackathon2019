@@ -31,3 +31,5 @@
 /config/master.key
 .swp
 *.swp
+.DS_Store
+*.DS_Store
