@@ -1,0 +1,156 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	outline: none;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #ff5000
+}
+
+a:hover,a:focus,a:active {
+	text-decoration: none;
+	outline: none;
+}
+
+li a{
+	font-face: MuseoSans-100;
+}
+
+html {
+	overflow-y: auto;
+}
+
+html,body {
+	width: 100%;
+}
+
+div,p,ul,li,table,th,td,textarea,input,span,form,h1,h2,h3,h4,h5,h6,dt,dl,dd,em,sup
+	{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul,ol,dl,dd,dt,li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	line-height: 16px;
+}
+
+form,fieldset,p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+table,tbody,tfoot,thead,tr,th,td {
+	border-collapse: separate;
+	border-spacing: 0;
+	table-layout: fixed;
+} /*border:none; separate*/
+/* 6 */
+* html table,tbody,tfoot,thead,tr,th,td {
+	border-collapse: collapse;
+}
+/* 7 */
+*+html table,tbody,tfoot,thead,tr,th,td {
+	border-collapse: collapse;
+}
+
+legend {
+	display: none;
+	position: absolute;
+	visibility: hidden;
+}
+
+caption {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0px;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	outline: none;
+}
+
+optgroup {
+	font-style: normal;
+	font-size: 0px;
+	height: 0px;
+	line-height: 0px;
+}
+
+input,select {
+	margin: 0;
+	vertical-align: middle;
+	font-family: 'nbg', sans-serif;
+}
+
+label {
+	cursor: pointer;
+}
+
+input.radio {
+	width: 12px;
+	height: 12px;
+}
+
+img,fieldset {
+	border: 0 none transparent; /*'transparent' for Opera7*/
+}
+
+i,em {
+	font-style: normal;
+}
+
+::-moz-selection {
+	background: #f9a73c;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #f9a73c;
+	color: #fff;
+	text-shadow: none;
+}
+
+#wrap {
+	width: 978px;
+	margin: 0 54px;
+	min-width: 980px;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 166px;
+}
+
+#container .contents {
+	width: 978px;
+}
