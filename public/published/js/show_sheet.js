@@ -44,6 +44,5 @@ function dialog_sheet(data,i) {
         appendHTML += "</div>"
         appendHTML += "</div>"
     }
-    console.log(data.name)
     return (appendHTML)
 }
