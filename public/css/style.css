@@ -48,6 +48,16 @@
     border-radius: 5px;
     padding:15px 20px;
 }
+.tooltip2 {
+  z-index:1;
+  display:none;
+  position: absolute;
+  width:500px;
+  background-color: rgba(255,255,255,0.9);
+  border:1px solid #5fcae2;
+  border-radius: 5px;
+  padding:15px 20px;
+}
 .highlighter_other:hover + .tooltip {display: block;animation-duration: 0.5s;
     animation-name: fadeIn;}
 .profile_area:hover + .tooltip {display: block;animation-duration: 0.5s;
@@ -55,7 +65,14 @@
 .about:hover + .tooltip {display: block;animation-duration: 0.5s;
     animation-name: fadeIn;}
 
-.tag { background-color:#5fcae2; color:white; border-radius: 5px; padding:2px 5px; margin-right:5px; display: inline-block;font-size:12px; line-height:1.5em} 
+    .highlighter_other:hover + .tooltip2 {display: block;animation-duration: 0.5s;
+      animation-name: fadeIn;}
+  .profile_area:hover + .tooltip2 {display: block;animation-duration: 0.5s;
+      animation-name: fadeIn;}
+  .about:hover + .tooltip2 {display: block;animation-duration: 0.5s;
+      animation-name: fadeIn;}
+
+.tag { background-color:#676c6d; color:white; border-radius: 5px; padding:2px 5px; margin-right:5px; display: inline-block;font-size:12px; line-height:1.5em} 
 .tag.keyword { background-color:#ffd585; color:#333; border-radius: 5px; padding:5x 15px; margin-right:5px; display: inline-block;font-size:18px; line-height:1.5em} 
 
 .fit {
