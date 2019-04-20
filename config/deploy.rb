@@ -38,6 +38,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp')
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+:passenger_restart_with_touch, true
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
