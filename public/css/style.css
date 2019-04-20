@@ -58,6 +58,7 @@
   border-radius: 5px;
   padding:15px 20px;
 }
+
 .highlighter_other:hover + .tooltip {display: block;animation-duration: 0.5s;
     animation-name: fadeIn;}
 .profile_area:hover + .tooltip {display: block;animation-duration: 0.5s;
