@@ -1,7 +1,7 @@
 <div class="header tc" style="width:100%;height:360px;background-color:#5fcae2">
         <div class="fixed_header ys f20 cp ts" style="color:white;">   
             <span class="about oh ys">대한민국국회실록이란?</span>
-            <div class="tooltip" style="right:10px;top:30px; width:350px;padding:30px;">
+            <div class="tooltip2" style="right:10px;top:30px; width:350px;padding:30px;">
                 <div class="ys" style="color:#333;font-size:28px;">대한민국국회실록</div>
                 <div class="ys pc mt10" style="font-size:20px;">팩트로 쓰고 팩트로 놀기</div>
                 <div class="mt20" style="font-size:13px;color:#333; line-height: 1.8em; text-align: left;">
@@ -24,13 +24,13 @@
             대한민국국회실록
         </div>
         <div style="width:300px;" class="dib">
-            <input type="text" name="person" class="form-control" placeholder="인물명을 입력하세요">
+            <input type="text" id="input_person" name="person" class="form-control" placeholder="인물명을 입력하세요">
         </div>
         <div style="width:300px;" class="dib">
-            <input type="text" name="keyword" class="form-control" placeholder="키워드를 입력하세요">
+            <input type="text" id="input_keyword" name="keyword" class="form-control" placeholder="키워드를 입력하세요">
         </div><br>
         <div class="tc">
-            <div class="scButton pc oh cp ts bs ys mt20"  style="width:300px;display: inline-block;">인물&키워드 검색하기</div>
+            <div id="search_button" class="scButton pc oh cp ts bs ys mt20"  style="width:300px;display: inline-block;">인물&키워드 검색하기</div>
         </div>
     </div>
     <div class="content main_page">
@@ -152,21 +152,6 @@
                     </div>
                 </div>
             </div>
-
-           
         </div>
-        
     </div>
-
-    <script>
-            $('input[name="keyword"]').amsifySuggestags();
-            $('input[name="person"]').amsifySuggestags({
-                suggestions: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitor', 'Uranus', 'Neptune', 'Pluto'],
-                whiteList: true
-            });
-            $('input[name="tag"]').amsifySuggestags({
-                type : 'amsify',
-                suggestions: ['Black', 'White', 'Red', 'Blue', 'Green', 'Orange']
-            });
-    
-        </script>
+    <%= render partial: "home/auto_complete" %>
