@@ -2955,5 +2955,8 @@
             $('#search_button').on("click", function(){
               window.location="/search?person=" + $("#input_person")[0].value + "&keyword=" + $("#input_keyword")[0].value;
             });
+            $('#search_button_new').on("click", function(){
+              window.open("/search?person=" + $("#input_person")[0].value + "&keyword=" + $("#input_keyword")[0].value, "_blank");
+            });
     
         </script>

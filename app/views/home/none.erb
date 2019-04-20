@@ -1,0 +1,35 @@
+    <div class="ys pc" style="width:90%;margin:0px auto; font-size:36px;">대한민국국회실록</div>
+    <div class="bs mt30" style="padding:15px 20px;width:90%;margin:0px auto">    
+        <div class="article_container">
+            <div style="font-size:24px;" class="fwb">
+                &nbsp; 
+            </div>
+            <div style="font-size:13px; color:#999;" class="mt5">
+                http://www.mediatoday.co.kr/?mod=news&act=articleView&idxno=89854   
+            </div>
+        </div>
+        <div class="announce_container mt10">
+            <div class="tc" style="width:50%; margin:0 auto; border-radius: 5px; padding:30px;">
+                이 기사에 연동된 회의록이 없습니다.
+            </div>
+            <div style="width:49%;" class="dib">
+                    <input type="text" id="input_person" name="person" class="form-control" placeholder="인물명을 입력하세요">
+                </div>
+                <div style="width:50%;" class="dib">
+                    <input type="text" id="input_keyword" name="keyword" class="form-control" placeholder="키워드를 입력하세요">
+                </div><br>
+            <!-- <form style="font-size:18px;" class="mb10">
+                <div style="font-size:18px" class="fwb mb10 pc">직접 국회실록 검색하기</div>
+                <select>
+                    <option>인물 1</option>
+                    <option>인물 2</option>
+                    <option>인물 3</option>
+                </select>
+                <input type="text" placeholder="키워드를 입력해주세요"></input>
+            </form> -->
+            <div class="tc mt20">
+                <div id="search_button_new" class="scButton oh cp ts bs ys bpc" style="color:white; background-color: #5fcae2">검색하기</div>
+            </div>
+        </div>
+     </div>
+     <%= render :partial => "home/auto_complete" %>

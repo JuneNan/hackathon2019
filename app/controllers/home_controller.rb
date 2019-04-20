@@ -8,4 +8,8 @@ class HomeController < ApplicationController
     @keyword = params[:keyword].split(",")
     @person = params[:person].split(",")
   end
+
+  def none
+
+  end
 end
