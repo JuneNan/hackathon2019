@@ -81,6 +81,12 @@ padding:15px 20px;
     animation-name: fadeIn;
   }
 
+  .fit2 {
+    display: block!important;
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -91,3 +97,9 @@ padding:15px 20px;
   }
 
   a:hover{text-decoration: none!important;}
+
+  .dummy_result .dh {display: none;}
+
+  .dummy_result .dh1 {display: none;}
+
+  .dummy_result .dh2 {display: none;}
