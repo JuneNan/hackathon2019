@@ -38,11 +38,21 @@
                 </div>
             </div>
             
-            <div class="tc ys" style="font-size:48px; color:white; padding-top:100px;">
-                대한민국국회실록
+            <a href="https://assembly-fact-sheet.com/">
+                <div class="tc ys mb20" style="font-size:48px; color:white; padding-top:100px;">
+                    대한민국국회실록
+                </div>
+            </a>
+            <div style="width:300px;" class="dib">
+                <input type="text" name="person" class="form-control" placeholder="인물명을 입력하세요">
+            </div>
+            <div style="width:300px;" class="dib">
+                <input type="text" name="keyword" class="form-control" placeholder="키워드를 입력하세요">
+            </div><br>
+            <div class="tc">
+                <div class="scButton pc oh cp ts bs ys mt20"  style="width:300px;display: inline-block;">인물&키워드 검색하기</div>
             </div>
             
-            <div class="scButton pc oh cp ts bs ys"  style="display: inline;">검색하기</div>
         </div>
         <div class="content main_page">
           <div class="tc mt30 f20 fwb" style="font-size:36px">
@@ -56,4 +66,12 @@
         </div>
     </body>
     <script src="js/show_sheet.js"></script>
+    <script>
+        $('input[name="keyword"]').amsifySuggestags();
+        $('input[name="person"]').amsifySuggestags({
+            suggestions: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitor', 'Uranus', 'Neptune', 'Pluto'],
+            whiteList: true
+        });
+
+    </script>
 </html>

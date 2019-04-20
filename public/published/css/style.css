@@ -89,3 +89,5 @@ padding:15px 20px;
       opacity: 1;
     }
   }
+
+  a:hover{text-decoration: none!important;}
