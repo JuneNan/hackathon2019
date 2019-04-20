@@ -10,58 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_19_123029) do
-
-  create_table "articles", force: :cascade do |t|
-    t.text "url", null: false
-    t.integer "highlight", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2019_04_19_122201) do
 
   create_table "chats", force: :cascade do |t|
-    t.string "kode", null: false
-    t.string "lid", null: false
-    t.string "p_name", null: false
-    t.integer "sequence", null: false
+    t.string "speaker", null: false
     t.text "content", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "highlights", force: :cascade do |t|
-    t.integer "silrok_id", null: false
-    t.integer "start_at", null: false
-    t.integer "end_at", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "silroks", force: :cascade do |t|
-    t.string "kode", null: false
-    t.integer "daesoo", null: false
-    t.string "category", null: false
-    t.integer "which1", null: false
-    t.integer "which2", null: false
-    t.date "written_at", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "speakers", force: :cascade do |t|
-    t.string "lid", null: false
-    t.string "name", null: false
-    t.string "chinese", null: false
-    t.string "which", null: false
-    t.string "photo_path", null: false
-    t.text "profile1", null: false
-    t.text "profile2", null: false
-    t.text "profile3", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "tags", force: :cascade do |t|
+    t.integer "sequence", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

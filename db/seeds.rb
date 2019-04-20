@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+text = File.open(Rails.root.join("test2.csv")).read
+text.gsub!(/\r\n?/, "\n")
+text.each_line do |line|
+  r = CSV.parse(line)
+
+  c = Chat.new
+  c.content = r[0][1]
+  c.speaker = r[0][2]
+  c.sequence = r[0][4]
+  c.save
+end
