@@ -161,7 +161,9 @@
     <script>
             $('input[name="keyword"]').amsifySuggestags();
             $('input[name="person"]').amsifySuggestags({
-                suggestions: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitor', 'Uranus', 'Neptune', 'Pluto'],
+                suggestions: [
+                <%= @person.map{|x| "\'#{x}\'"}.join(",").html_safe %>
+                ],
                 whiteList: true
             });
             $('input[name="tag"]').amsifySuggestags({
