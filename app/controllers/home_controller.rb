@@ -5,8 +5,7 @@ class HomeController < ApplicationController
   end
 
   def search
-    keyword = params[:keyword]
-    person = params[:person]
-
+    @keyword = params[:keyword].split(",")
+    @person = params[:person].split(",")
   end
 end
