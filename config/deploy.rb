@@ -4,6 +4,7 @@ lock "~> 3.11.0"
 set :application, "factsheet"
 set :repo_url, "git@github.com:JuneNan/hackathon2019.git"
 set :deploy_to, "/home/ec2-user/#{fetch(:application)}"
+set :passenger_restart_with_touch, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -38,7 +39,6 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp')
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-:passenger_restart_with_touch, true
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
