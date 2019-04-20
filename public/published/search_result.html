@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/common.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,34 +17,41 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <div class="header tc" style="width:100%;height:450px;background-color:#5fcae2">
-            <div class="fixed_header ys f20 cp ts" style="color:white;">   
-                <span class="about oh ys">대한민국국회실록이란?</span>
-                <div class="tooltip" style="right:10px;top:30px; width:350px;padding:30px;">
-                    <div class="ys" style="color:#333;font-size:28px;">대한민국국회실록</div>
-                    <div class="ys pc mt10" style="font-size:20px;">팩트로 쓰고 팩트로 놀기</div>
-                    <div class="mt20" style="font-size:13px;color:#333; line-height: 1.8em; text-align: left;">
+        <div class="header tc" style="width:100%;height:360px;background-color:#5fcae2">
+                <div class="fixed_header ys f20 cp ts" style="color:white;">   
+                    <span class="about oh ys">대한민국국회실록이란?</span>
+                    <div class="tooltip" style="right:10px;top:30px; width:350px;padding:30px;">
+                        <div class="ys" style="color:#333;font-size:28px;">대한민국국회실록</div>
+                        <div class="ys pc mt10" style="font-size:20px;">팩트로 쓰고 팩트로 놀기</div>
+                        <div class="mt20" style="font-size:13px;color:#333; line-height: 1.8em; text-align: left;">
                             <b>대한민국국회실록</b>은 가장 많은 눈이 쏠려 있는 곳인 국회의 시시콜콜함을 기록해 놓은 회의록을 DB화 해 <span class="fwb pc">1_ searchable</span>,  <span class="fwb pc">2_playable</span>한 형태로 제공하는 서비스 입니다.  <br><br>
                             <img src="img/about.jpg" style="width:100%"><br><br>
-                        팩트체크, 원자료를 활용한 기사 쓰기, 적극적인 뉴스 소비의 목적을 달성하기 위해 검색 가능한 형태로 회의록을 제공하고, 자신이 발견한 중요한 회의록 내용을 다른 사람과 공유할 수 있는 하일라이트 기능과 크롬 익스텐션을 통한 직접적인 팩트체크 기능은 뉴스 소비자의 적극적인 뉴스 활용을 가능하게 하고 정치에 대한 접근성을 높여줍니다.
-                    </div>
-                   
-                    <div class="mt10 fwb ys" style="color:#333">
-                        팀 쨈 Jjam
-                    </div>
-                    <div class="mt5 ys" style="color:#999; font-size:12px;">
-                        Project Manager 장슬기 Developer 이두희 Designer 이준원<br>
-                        For 2019 Google Media Hackathon
+                            팩트체크, 원자료를 활용한 기사 쓰기, 적극적인 뉴스 소비의 목적을 달성하기 위해 검색 가능한 형태로 회의록을 제공하고, 자신이 발견한 중요한 회의록 내용을 다른 사람과 공유할 수 있는 하일라이트 기능과 크롬 익스텐션을 통한 직접적인 팩트체크 기능은 뉴스 소비자의 적극적인 뉴스 활용을 가능하게 하고 정치에 대한 접근성을 높여줍니다.
+                        </div>
+                        
+                        <div class="mt10 fwb ys" style="color:#333">
+                            팀 쨈 Jjam
+                        </div>
+                        <div class="mt5 ys" style="color:#999; font-size:12px;">
+                            Project Manager 장슬기 Developer 이두희 Designer 이준원<br>
+                            For 2019 Google Media Hackathon
+                        </div>
                     </div>
                 </div>
+                
+                <div class="tc ys mb20" style="font-size:48px; color:white; padding-top:100px;">
+                    대한민국국회실록
+                </div>
+                <div style="width:300px;" class="dib">
+                    <input type="text" name="person" class="form-control" placeholder="인물명을 입력하세요">
+                </div>
+                <div style="width:300px;" class="dib">
+                    <input type="text" name="keyword" class="form-control" placeholder="키워드를 입력하세요">
+                </div><br>
+                <div class="tc">
+                    <div class="scButton pc oh cp ts bs ys mt20"  style="width:300px;display: inline-block;">인물&키워드 검색하기</div>
+                </div>
             </div>
-            
-            <div class="tc ys" style="font-size:48px; color:white; padding-top:100px;">
-                대한민국국회실록
-            </div>
-            
-            <div class="scButton pc oh cp ts bs ys"  style="display: inline;">검색하기</div>
-        </div>
         <div class="content">
             <div class="tag keyword">당신은</div>
             <div class="tag keyword">별들의</div>
@@ -202,5 +210,12 @@
             <hr>
             <!-- 검색 결과 콤포넌트 끝 -->     
         </div>
+        <script>
+        $('input[name="keyword"]').amsifySuggestags();
+        $('input[name="person"]').amsifySuggestags({
+            suggestions: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitor', 'Uranus', 'Neptune', 'Pluto'],
+            whiteList: true
+        });
+    </script>
     </body>
 </html>
