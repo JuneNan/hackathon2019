@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get '' => "home#index"
   get '/' => "home#index"
+  get '/search' => "home#search"
   get 'health' => "home#health"
 
 end
