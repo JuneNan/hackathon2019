@@ -73,7 +73,7 @@
   .about:hover + .tooltip2 {display: block;animation-duration: 0.5s;
       animation-name: fadeIn;}
 
-.tag { background-color:#676c6d; color:white; border-radius: 5px; padding:2px 5px; margin-right:5px; display: inline-block;font-size:12px; line-height:1.5em} 
+.tag { background-color:#5fcae2; color:white; border-radius: 5px; padding:2px 5px; margin-right:5px; display: inline-block;font-size:12px; line-height:1.5em} 
 .tag.keyword { background-color:#ffd585; color:#333; border-radius: 5px; padding:5x 15px; margin-right:5px; display: inline-block;font-size:18px; line-height:1.5em} 
 
 .fit {
